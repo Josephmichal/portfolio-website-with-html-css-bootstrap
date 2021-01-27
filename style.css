@@ -5,7 +5,7 @@ body{
     overflow-x: hidden;
     font-family: sans-serif;
 }
-
+/*----------------------navbar---------------------------------------------*/
 .navbar{
     text-decoration:underline;
     font-size: 14px;
@@ -25,5 +25,86 @@ body{
 
 .navbar-dark .navbar-nav .nav-link.active,
 .navbar-dark .navbar-nav .nav-link:hover{
-    color: #26e456
+    color: #26e4ab
 }
+.img-fluid{
+    width: 100%;
+    height: 800px;
+    
+}
+/*-----------------------------------------------hello im joseph--------------------------*/
+.heading-content{
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    max-width: 100%;
+
+}
+                       /*selection*/
+.heading-content h5::selection{
+    background: red;
+    color: yellow;
+}
+.heading-content h1::selection{
+    background: yellow;
+    color: red;
+}
+
+.heading-content p::selection{
+    background: red;
+    color: yellow;
+}
+
+/*----------------text editing------------*/
+
+
+.heading-content h5{
+    font-size: 3em;
+    font-weight: 300;
+    color: white;
+    font-family: monospace;
+}
+.heading-content h5:hover{
+    color: #26e4ab
+
+}
+
+
+.heading-content h1{
+    font-size: 5em;
+    font-weight: bolder;
+    color: white;
+    font-family: monospace;
+}
+
+.heading-content h1:hover{
+    color: #26e4ab
+
+}
+
+.heading-content p{
+    font-size: 1em;
+    font-weight: lighter;
+    color: rgb(88, 84, 84);
+    font-family: monospace;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+}
+.heading-content p:hover{
+    color: #26e4ab
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
