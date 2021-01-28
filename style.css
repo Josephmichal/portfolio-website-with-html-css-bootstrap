@@ -61,12 +61,8 @@ body{
 .heading-content h5{
     font-size: 3em;
     font-weight: 300;
-    color: white;
+    color: rgb(155, 117, 117);
     font-family: monospace;
-}
-.heading-content h5:hover{
-    color: #26e4ab
-
 }
 
 
@@ -77,22 +73,25 @@ body{
     font-family: monospace;
 }
 
-.heading-content h1:hover{
-    color: #26e4ab
-
-}
 
 .heading-content p{
     font-size: 1em;
     font-weight: lighter;
-    color: rgb(88, 84, 84);
+    color: rgb(238, 224, 224);
     font-family: monospace;
     word-spacing: 5px;
     letter-spacing: 2px;
 }
-.heading-content p:hover{
-    color: #26e4ab
 
+
+
+
+/*--------------------about me----------------------*/
+hr{
+    border: 0;
+    width: 96%;
+    color: #FFFF00;
+    height: 1px;
 }
 
 
