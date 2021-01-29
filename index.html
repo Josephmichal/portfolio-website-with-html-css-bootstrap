@@ -6,29 +6,30 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 </head>
-<body>
+<body data-spy="scroll" data-target="#navbarResponsive">
   <!--------------------------------navbar------------------------------->
 <div id="home">
 
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" >
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" >
           <span class="navbar-toggler-icon"></span>
         </button>
       
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav mx-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">HOME </a>
+            <li class="nav-item">
+              <a class="nav-link" href="#home">HOME </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">ABOUT</a>
+              <a class="nav-link" href="#about">ABOUT</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">SERVICES</a>
+                <a class="nav-link" href="#services">SERVICES</a>
               </li>    <li class="nav-item">
                 <li>
-                <a class="nav-link" href="#">CONTACT</a>
+                <a class="nav-link" href="#contact">CONTACT</a>
               </li>
             
           </ul>
@@ -37,9 +38,10 @@
       </nav>
 </div>
 
-<!-------------------background start--------------------------------->
+<!-------------------background --------------------------------->
 <div class="background">
-<img src="./website images/pro pic.jpg"  alt="" class="img-fluid ">
+  <div class="col-12">
+<img src="./website images/pro pic.jpg"  alt="" class="img-fluid"></div>
 </div>
 
 <div class="heading-content text-center">
@@ -51,21 +53,27 @@
 
 <!----------------------about-------------------->
 
-<div id="about" class=" container mt-3 pb-5" >
+<div id="about" class="offset container mt-3 pb-5" >
   <div class=" post heading text-center">
-    <h3 class="displa-4 font-weight-bold">About Me</h3>
+    <h3 class="displa-4 font-weight-bold" style="text-decoration:underline;c;">About Me</h3>
     <hr  class="w-50 mx-auto pb-5" >
   </div>
   <div class="container">
 <div class="row">
   <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-    <img src="./website images/pro pic.jpg" class="image-fluid" width="400" height="400" alt="">
+    <img src="./website images/pro pic.jpg" class="container image-fluid" width="400" height="400" alt="">
   </div>
 
-  <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-    <h2>wanna know me?</h2>
+  <div class="col-lg-6 col-md-6 col-sm-12 col-12"><br>
+    <h2 class="page">wanna know me?</h2>
     <hr>
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel laboriosam placeat velit a eaque vitae consectetur similique, veritatis beatae non voluptatem, veniam accusamus fuga repellat sapiente dolorem deserunt voluptatibus debitis facere libero earum inventore porro. Ad eius quas iure ab molestiae iusto, deleniti in distinctio velit mollitia consectetur dolorem doloribus.</p>
+    <h5 style="text-decoration:underline;font-weight: bolder;">  THINGS IM DEALING WITH:</h5>
+    <li>html</li>
+    <li>css</li>
+    <li>javascript</li>
+
+
   </div>
 </div>
 
@@ -76,9 +84,9 @@
 
 <!----------------------------------services------------>
 
-<div id="services" class=" container mt-3 pb-5">
+<div id="services" class="offset container mt-3 pb-5">
   <div class=" post heading text-center">
-    <h3 class="displa-4 font-weight-bold">services</h3>
+    <h3 class="displa-4 font-weight-bold"style="text-decoration:underline;style= text-decoration:underline;" >services</h3>
     <hr  class="w-50 mx-auto pb-5" >
   </div>
 
@@ -132,11 +140,46 @@
 
 <!-------------------contact------------------------------>
 
-<div id="contact" class="">
+<div id="contact" class="offset mt-3 w-50 mx-auto pb-5">
+  <div class=" post heading text-center">
+    <h3 class="displa-4 font-weight-bold" style="text-decoration:underline;">Contact Me</h3>
+    <hr  class="w-50 mx-auto pb-5" >
+  </div>
+  <form>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Full Name:</label>
+      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="your name" required>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Email:</label>
+      <input type="email" value="" class="form-control" id="exampleInputPassword1" placeholder="email" required>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Your Message:</label>
+      <textarea class="form-control"></textarea>
+    </div>
+    
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
 
   
 </div>
 
+
+<!-------------------------------------------footer------------->
+<footer class="bg-dark">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center text-white mt-2 ">
+       <a href="#"> <i class="fab fa-facebook-f ml-3" style="letter-spacing:1rem;font-weight: bolder;"></i></a>
+        <a href="#"><i class="fab fa-github" style="letter-spacing: 1rem;font-weight: bolder;"></i></a>
+        <a href="#"><i class="fab fa-instagram" style="letter-spacing: 1rem;font-weight: bolder;"></i></a><br>
+        <i class="far fa-copyright"style="letter-spacing:3px;">&nbsp 2021 copyright:Joseph Michal</i>
+
+      </div>
+    </div>
+  </div>
+</footer>
 
 
 

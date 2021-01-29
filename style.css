@@ -5,15 +5,27 @@ body{
     overflow-x: hidden;
     font-family: sans-serif;
 }
+a{
+    text-decoration: none;
+}
+
+.offset:before{
+    display: block;
+    content: "";
+    height: 6rem;
+}
+
 /*----------------------navbar---------------------------------------------*/
 .navbar{
-    text-decoration:underline;
+    text-decoration:bold;
     font-size: 14px;
     font-weight: 700;
     letter-spacing: 0.2rem;
     background:rgba(0,0,0,0.6) !important;
     padding: 10px 0;
-    box-shadow: 2px 2px transparent,;
+    box-shadow: 2px 2px transparent;
+    margin:0px 15px 0px 15px;
+
 
 }
 
@@ -30,7 +42,7 @@ body{
 .img-fluid{
     width: 100%;
     height: 800px;
-    
+
 }
 /*-----------------------------------------------hello im joseph--------------------------*/
 .heading-content{
@@ -61,7 +73,7 @@ body{
 .heading-content h5{
     font-size: 3em;
     font-weight: 300;
-    color: rgb(155, 117, 117);
+    color: rgb(235, 245, 245);
     font-family: monospace;
 }
 
@@ -69,15 +81,15 @@ body{
 .heading-content h1{
     font-size: 5em;
     font-weight: bolder;
-    color: white;
+    color: rgb(242, 250, 250);
     font-family: monospace;
 }
 
 
 .heading-content p{
-    font-size: 1em;
-    font-weight: lighter;
-    color: rgb(238, 224, 224);
+    font-size: 1.5em;
+    font-weight: bolder;
+    color: rgb(237, 240, 232);
     font-family: monospace;
     word-spacing: 5px;
     letter-spacing: 2px;
@@ -87,12 +99,6 @@ body{
 
 
 /*--------------------about me----------------------*/
-hr{
-    border: 0;
-    width: 96%;
-    color: #FFFF00;
-    height: 1px;
-}
 
 
 
@@ -107,3 +113,8 @@ hr{
 
 
 
+
+
+/*------------media query---------------*/
+@media screen and (max-width:360px){
+    
